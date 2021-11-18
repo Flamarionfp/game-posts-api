@@ -11,7 +11,7 @@ const Post = db.sequelize.define("posts", {
   },
   imagem: {
     allowNull: false,
-    type: db.Sequelize.BLOB("long"),
+    type: db.Sequelize.TEXT('long')
   },
   jogo: {
     allowNull: false,
