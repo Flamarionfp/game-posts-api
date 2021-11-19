@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("API Server Node JS!");
+  res.send("API Server Node JS for Game Posts Aplication!");
 });
 
 const routes = require("./routes/index")(app);
