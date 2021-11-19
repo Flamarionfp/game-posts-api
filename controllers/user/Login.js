@@ -10,10 +10,8 @@ exports.index = async (req, res) => {
       senha: senha,
       status: 1,
     },
-    attributes: ["email", "senha", "status"],
+    attributes: ["email", "nome"],
   });
-
-  console.log(response.dataValues)
 
   if (response === null) {
     res.send({
