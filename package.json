@@ -1,0 +1,28 @@
+{
+  "name": "game-posts-api",
+  "version": "1.0.0",
+  "description": "api node js para aplicação game posts",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flamarionfp/game-posts-api.git"
+  },
+  "author": "flamarion fagundes pinto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flamarionfp/game-posts-api/issues"
+  },
+  "homepage": "https://github.com/Flamarionfp/game-posts-api#readme"
+}
