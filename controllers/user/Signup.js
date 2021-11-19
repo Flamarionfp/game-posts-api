@@ -1,17 +1,4 @@
 const User = require("../../db/models/User");
-// const bcrypt = require("bcrypt");
-// const saltRounds = 10;
-
-
-  // bcrypt.genSalt(saltRounds, function (err, salt) {
-  //   bcrypt.hash(data.senha, salt, function (err, hash) {
-  //     if (hash !== null || hash !== undefined) {
-  //       console.log(hash);
-  //     } else {
-  //       res.send(500).send({ error: err });
-  //     }
-  //   });
-  // });
 
 exports.index = async (req, res) => {
   let data = req.body;
