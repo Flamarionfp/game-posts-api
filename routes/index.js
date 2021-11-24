@@ -12,9 +12,12 @@ module.exports = function (app) {
   const SignupPost = require("../controllers/post/SignupPost");
   const GetPosts = require("../controllers/post/GetPosts");
 
+  //Middlewares
+  const verifyEmailAvaliable = require("../middlewares/verifyEmailAvaliable");
+
   //User Endpoints
   app.route("/login").post(Login.index);
-  app.route("/signup").post(Signup.index);
+  app.route("/signup").post(verifyEmailAvaliable, Signup.index);
 
   //Post Endpoints
   app.route("/signuppost").post(SignupPost.index);
