@@ -11,14 +11,14 @@ const Post = db.sequelize.define("posts", {
   },
   imagem: {
     allowNull: false,
-    type: db.Sequelize.TEXT('long')
+    type: db.Sequelize.TEXT("long"),
   },
   jogo: {
     allowNull: false,
     type: db.Sequelize.STRING,
   },
   descricao: {
-    allowNull: false,
+    allowNull: true,
     type: db.Sequelize.STRING,
   },
   autor: {

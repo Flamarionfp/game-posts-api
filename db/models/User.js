@@ -30,7 +30,7 @@ const User = db.sequelize.define("users", {
 //Descomentar para recriar o model ->
 
 // User.sync({ force: true }).then(() => {
-//   console.log('User created successfully!')
-// })
+//   console.log("User created successfully!");
+// });
 
 module.exports = User;

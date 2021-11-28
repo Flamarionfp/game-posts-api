@@ -3,8 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const port = 3333;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
+app.use(bodyParser.json({ limit: "50mb" }));
 
 app.get("/", (req, res) => {
   res.send("API Server Node JS for Game Posts Aplication!");
