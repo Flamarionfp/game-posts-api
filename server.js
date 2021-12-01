@@ -17,7 +17,7 @@ app.listen(port, () => {
   console.log(`Sever listen on: ${port}`);
 });
 
-const host = '192.168.0.1'
+const host = 'http://192.168.0.1'
 // Mudar variável host e descomentar as linhas abaixo se
 // for consumir de um celular de verdade
 
